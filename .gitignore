@@ -1,5 +1,7 @@
 __pycache__
 main
+errors.txt
+output.txt
 *.class
 *.obj
 *.pyc
