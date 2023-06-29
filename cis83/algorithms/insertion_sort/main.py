@@ -1,3 +1,5 @@
+import random
+
 def insertion_sort(numbers):
     for i in range(1, len(numbers)):
         j = i
@@ -8,10 +10,11 @@ def insertion_sort(numbers):
             temp = numbers[j]
             numbers[j] = numbers[j - 1]
             numbers[j - 1] = temp
-            j = j - 1
         print(numbers)
 
-numbers = [10, 2, 78, 4, 45]
+# Driver code to test above
+random.seed("ABC")
+numbers = [random.randint(0,10000) for _ in range(100000)]
 print('UNSORTED:', end=' ')
 for num in numbers:
     print(num, end=' ')

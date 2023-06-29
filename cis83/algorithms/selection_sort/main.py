@@ -1,3 +1,5 @@
+import random
+
 def selection_sort(numbers):
     for i in range(len(numbers) - 1):
         # Find index of smallest remaining element
@@ -13,7 +15,10 @@ def selection_sort(numbers):
         print(numbers)
 
             
-numbers = [10, 2, 78, 4, 45,]
+# Driver code to test above
+random.seed("ABC")
+numbers = [random.randint(0,10000) for _ in range(100000)]
+
 print('UNSORTED:', end=' ')
 for num in numbers:
     print(num, end=' ')
